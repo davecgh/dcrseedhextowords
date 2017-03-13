@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/decred/dcrwallet/pgpwordlist"
+	"github.com/decred/dcrwallet/walletseed"
 )
 
 func main() {
@@ -37,10 +37,5 @@ func main() {
 	}
 
 	// Convert bytes to seed words with checksum.
-	seedWords, err := pgpwordlist.ToStringChecksum(seedBytes)
-	if err != nil {
-		fmt.Printf("Unable to encode seed bytes: %v", err)
-		os.Exit(1)
-	}
-	fmt.Println(seedWords)
+	fmt.Println(walletseed.EncodeMnemonic(seedBytes))
 }
