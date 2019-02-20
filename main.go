@@ -3,11 +3,10 @@ package main
 import (
 	"encoding/hex"
 	"fmt"
+	"github.com/decred/dcrwallet/walletseed"
 	"os"
 	"path/filepath"
 	"strings"
-
-	"github.com/decred/dcrwallet/walletseed"
 )
 
 func main() {
