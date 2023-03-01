@@ -6,7 +6,7 @@ to the seed words needed for importing into wallets.
 
 ## Requirements
 
-[Go](http://golang.org) 1.5 or newer.
+[Go](http://golang.org) 1.19 or newer.
 
 ## Installation
 

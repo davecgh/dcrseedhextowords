@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/decred/dcrwallet/walletseed"
+	"decred.org/dcrwallet/v2/walletseed"
 	"os"
 	"path/filepath"
 	"strings"
